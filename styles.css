@@ -52,8 +52,10 @@ h1::before {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    cursor: pointer;
 }
 
+/* Hover Effect */
 .menu-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
@@ -64,6 +66,12 @@ img {
     width: 100%;
     border-radius: 15px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.menu-item:hover img {
+    transform: scale(1.05);
 }
 
 /* Item Name */
@@ -104,6 +112,7 @@ button {
     box-shadow: 0 5px 15px rgba(37, 211, 102, 0.5);
 }
 
+/* Button Hover Effect */
 button:hover {
     background: #1ebe57;
     transform: scale(1.05);
