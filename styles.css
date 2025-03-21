@@ -1,7 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
 
-/* Background */
+/* Gradient Background */
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
@@ -10,7 +10,6 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    text-align: center;
     margin: 0;
     padding: 20px;
 }
@@ -33,7 +32,7 @@ h1::before {
     font-size: 2.5rem;
 }
 
-/* Menu Layout */
+/* Menu Container */
 .menu-container {
     display: flex;
     flex-wrap: wrap;
@@ -42,7 +41,7 @@ h1::before {
     max-width: 1000px;
 }
 
-/* Meal Card */
+/* Individual Menu Item */
 .menu-item {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
@@ -52,27 +51,17 @@ h1::before {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    cursor: pointer;
-    overflow: hidden;
 }
 
-/* ✅ HOVER EFFECT FIXED */
 .menu-item:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Image */
-img {
+/* Image Styling */
+.menu-item img {
     width: 100%;
     border-radius: 15px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* ✅ IMAGE ZOOM HOVER FIXED */
-.menu-item:hover img {
-    transform: scale(1.1);
 }
 
 /* Item Name */
@@ -85,11 +74,12 @@ h2 {
 
 /* Price */
 p {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
     color: white;
 }
 
-/* WhatsApp Order Button */
+/* WhatsApp Button */
 button {
     background: #25d366;
     color: white;
@@ -102,9 +92,33 @@ button {
     box-shadow: 0 5px 15px rgba(37, 211, 102, 0.5);
 }
 
-/* ✅ BUTTON HOVER FIXED */
 button:hover {
     background: #1ebe57;
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(37, 211, 102, 0.7);
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1::before {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
 }
