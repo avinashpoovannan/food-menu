@@ -1,31 +1,64 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffbf0;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-.menu-item {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    display: inline-block;
-    width: 200px;
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #ff5733; /* Warm Food Color */
 }
 
-.menu-item img {
+.menu-item {
+    background: white;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+img {
     width: 100%;
-    height: auto;
     border-radius: 10px;
 }
 
+h2 {
+    color: #ff4500; /* Reddish food color */
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
 button {
-    background-color: #25D366;
+    background: #28a745;
     color: white;
-    padding: 10px;
     border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
+    transition: 0.3s ease;
 }
 
 button:hover {
-    background-color: #1ebe57;
+    background: #218838;
+    transform: scale(1.05);
 }
