@@ -3,37 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Menu</title>
+    <title>Diet Food Menu</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Delicious Food Menu</h1>
+    <h1 class="title">Skip the powder, fuel up with real protein!</h1>
 
     <div class="menu-container">
-        <div class="menu-item">
-            <img src="images/pasta.jpeg" alt="Pasta">
-            <h2>Pasta</h2>
-            <p>₹250</p>
-            <button onclick="orderWhatsApp('Pasta', 250)">Order on WhatsApp</button>
+        <!-- Meal 1 -->
+        <div class="meal-card">
+            <img src="images/pasta.jpeg" alt="Meal 1">
+            <h2>Meal 1</h2>
+            <p>150g Chicken, 200g Rice, Veggies</p>
+            <p class="macros"><strong>Macros:</strong> 39.2g Protein, 4.4g Fat, 50g Carbs</p>
+            <p class="price">₹160</p>
+            <button class="order-btn">Order on WhatsApp</button>
         </div>
 
-        <div class="menu-item">
-            <img src="images/pizza.jpeg" alt="Pizza">
-            <h2>Pizza</h2>
-            <p>₹400</p>
-            <button onclick="orderWhatsApp('Pizza', 400)">Order on WhatsApp</button>
+        <!-- Meal 2 -->
+        <div class="meal-card">
+            <img src="images/pasta.jpeg" alt="Meal 1">
+            <h2>Meal 2</h2>
+            <p>150g Chicken, 2 Chappathis, Veggies</p>
+            <p class="macros"><strong>Macros:</strong> 39.2g Protein, 4.4g Fat, 40g Carbs</p>
+            <p class="price">₹160</p>
+            <button class="order-btn">Order on WhatsApp</button>
         </div>
     </div>
-
-    <script>
-        function orderWhatsApp(item, price) {
-            let message = `I want to order ${item} for ₹${price}`;
-            let phoneNumber = "919344470253";  
-            let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-            window.open(whatsappURL, "_blank");
-        }
-    </script>
 
 </body>
 </html>
