@@ -24,7 +24,14 @@
         <button onclick="orderWhatsApp('Pizza', 400)">Order on WhatsApp</button>
     </div>
 
-    <a href="https://wa.me/919344470253?text=I%20want%20to%20order%20Pasta" target="_blank">
-        <button>Order on WhatsApp</button>
-      </a>
-      
+    <script>
+        function orderWhatsApp(item, price) {
+            let message = `I want to order ${item} for ₹${price}`;
+            let phoneNumber = "919344470253";  
+            let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappURL, "_blank"); // Opens in a new tab
+        }
+    </script>
+
+</body>
+</html>
