@@ -21,15 +21,7 @@ h1 {
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Emoji Icon */
-h1::before {
-    content: "🍔";
-    font-size: 2.5rem;
+    text-align: center;
 }
 
 /* Menu Container */
@@ -103,14 +95,6 @@ button:hover {
     h1 {
         font-size: 2rem;
         text-align: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    h1::before {
-        display: block;
-        text-align: center;
-        font-size: 2rem;
     }
 
     .menu-container {
