@@ -3,34 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diet Food Menu</title>
+    <title>Food Menu</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <h1 class="title">Skip the powder, fuel up with real protein!</h1>
+    <h1>Skip the powder, fuel up with real protein!</h1>
 
     <div class="menu-container">
         <!-- Meal 1 -->
-        <div class="meal-card">
+        <div class="menu-item">
             <img src="images/pasta.jpeg" alt="Meal 1">
             <h2>Meal 1</h2>
-            <p>150g Chicken, 200g Rice, Veggies</p>
-            <p class="macros"><strong>Macros:</strong> 39.2g Protein, 4.4g Fat, 50g Carbs</p>
-            <p class="price">₹160</p>
-            <button class="order-btn">Order on WhatsApp</button>
+            <p>🍗 150g Chicken, 🍚 200g Rice, 🥦 Veggies</p>
+            <p class="macros">Calories: 550 kcal | Protein: 45g | Carbs: 60g | Fats: 10g</p>
+            <button onclick="orderOnWhatsApp('Meal 1')">Order on WhatsApp</button>
         </div>
 
         <!-- Meal 2 -->
-        <div class="meal-card">
-            <img src="images/pasta.jpeg" alt="Meal 1">
+        <div class="menu-item">
+            <img src="images/pasta.jpeg" alt="Meal 2">
             <h2>Meal 2</h2>
-            <p>150g Chicken, 2 Chappathis, Veggies</p>
-            <p class="macros"><strong>Macros:</strong> 39.2g Protein, 4.4g Fat, 40g Carbs</p>
-            <p class="price">₹160</p>
-            <button class="order-btn">Order on WhatsApp</button>
+            <p>🔥 200g Grilled Chicken, 🍠 250g Sweet Potato, 🥗 Salad</p>
+            <p class="macros">Calories: 600 kcal | Protein: 50g | Carbs: 70g | Fats: 12g</p>
+            <button onclick="orderOnWhatsApp('Meal 2')">Order on WhatsApp</button>
         </div>
     </div>
 
+    <script>
+        function orderOnWhatsApp(mealName) {
+            let phoneNumber = "919344470253"; // Replace with your WhatsApp number
+            let message = `Hello! I'd like to order: ${mealName}`;
+            let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
+        }
+    </script>
 </body>
 </html>

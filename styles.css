@@ -1,7 +1,6 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
 
-/* Gradient Background */
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
@@ -12,16 +11,15 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 20px;
+    text-align: center;
 }
 
 /* Header */
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
-    text-align: center;
 }
 
 /* Menu Container */
@@ -50,23 +48,30 @@ h1 {
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Image Styling */
-.menu-item img {
+/* Image */
+img {
     width: 100%;
     border-radius: 15px;
 }
 
 /* Item Name */
 h2 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     color: #fff;
     margin: 10px 0;
 }
 
+/* Macros & Calories */
+.macros {
+    font-size: 16px;
+    font-weight: bold;
+    color: black; /* Changed to black */
+    margin-bottom: 10px;
+}
+
 /* Price */
 p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: white;
 }
@@ -90,18 +95,16 @@ button:hover {
     box-shadow: 0 8px 20px rgba(37, 211, 102, 0.7);
 }
 
-/* Mobile Optimization */
-@media (max-width: 768px) {
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
     h1 {
         font-size: 2rem;
-        text-align: center;
+        padding: 10px;
     }
-
     .menu-container {
         flex-direction: column;
         align-items: center;
     }
-
     .menu-item {
         width: 90%;
     }
