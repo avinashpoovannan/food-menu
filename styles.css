@@ -1,7 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
 
-/* Gradient Background */
+/* Background */
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
@@ -42,7 +42,7 @@ h1::before {
     max-width: 1000px;
 }
 
-/* Meal Card Styling */
+/* Meal Card */
 .menu-item {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
@@ -53,15 +53,16 @@ h1::before {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     cursor: pointer;
+    overflow: hidden;
 }
 
-/* Hover Effect */
+/* ✅ HOVER EFFECT FIXED */
 .menu-item:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Image Styling */
+/* Image */
 img {
     width: 100%;
     border-radius: 15px;
@@ -69,9 +70,9 @@ img {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Image Hover Effect */
+/* ✅ IMAGE ZOOM HOVER FIXED */
 .menu-item:hover img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 /* Item Name */
@@ -82,21 +83,10 @@ h2 {
     margin: 10px 0;
 }
 
-/* Macros & Price Styling */
+/* Price */
 p {
     font-size: 16px;
     color: white;
-}
-
-.macros {
-    font-weight: bold;
-    color: #444;
-}
-
-.price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #27ae60;
 }
 
 /* WhatsApp Order Button */
@@ -112,9 +102,9 @@ button {
     box-shadow: 0 5px 15px rgba(37, 211, 102, 0.5);
 }
 
-/* Button Hover Effect */
+/* ✅ BUTTON HOVER FIXED */
 button:hover {
     background: #1ebe57;
-    transform: scale(1.05);
+    transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(37, 211, 102, 0.7);
 }
