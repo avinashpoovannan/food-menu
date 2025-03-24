@@ -1,6 +1,6 @@
-function orderWhatsApp(item, price) {
-    let phoneNumber = "+919344470253";
-    let message = `Hello, I would like to order ${item} for ₹${price}.`;
-    let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappURL, "_blank");
+function orderOnWhatsApp(mealName) {
+    let phoneNumber = "919344470253"; // WhatsApp number
+    let message = `Hello! I'd like to order: ${mealName}`;
+    let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
 }
