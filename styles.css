@@ -1,10 +1,10 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
 
-/* Outer Background (White) */
+/* Outer Background - Soft Green Gradient */
 body {
     font-family: 'Poppins', sans-serif;
-    background: white; /* Outer background remains white */
+    background: linear-gradient(135deg, #d4f8d4, #f0fff4); /* Soft green gradient */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,21 +15,21 @@ body {
     text-align: center;
 }
 
-/* Site Container with Red Background */
+/* Main Container with Green Border & Inner Gradient */
 .site-border {
-    border: 5px solid #1bce1e; /* Red border */
+    border: 5px solid #218838; /* Darker Green for better contrast */
     padding: 20px;
     border-radius: 15px;
     width: 95%;
     max-width: 1100px;
-    background: linear-gradient(135deg, #529c16, #76df20); /* Green Inside */
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #eaffea, #ffffff); /* More visible green */
+    box-shadow: 0 5px 20px rgba(33, 136, 56, 0.3); /* Soft green shadow for depth */
 }
 
 /* Header */
 h1 {
     font-size: 2.5rem;
-    color: white; /* White text inside red area */
+    color: #1e7e34; /* Darker green text */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
@@ -46,13 +46,12 @@ h1 {
 
 /* Individual Menu Item */
 .menu-item {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(15px);
+    background: #ffffff;
     width: 320px;
     max-width: 100%;
     padding: 15px;
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.2); /* Soft green shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
@@ -60,7 +59,7 @@ h1 {
 /* Hover Effect */
 .menu-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 25px rgba(40, 167, 69, 0.3);
 }
 
 /* Image */
@@ -72,7 +71,7 @@ img {
 /* Item Name */
 h2 {
     font-size: 22px;
-    color: white; /* White text inside red area */
+    color: #218838; /* Darker green text */
     margin: 10px 0;
 }
 
