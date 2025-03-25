@@ -17,12 +17,12 @@ body {
 
 /* Site Container with Red Background */
 .site-border {
-    border: 5px solid #c53030; /* Red border */
+    border: 5px solid #73c530; /* Red border */
     padding: 20px;
     border-radius: 15px;
     width: 95%;
     max-width: 1100px;
-    background: linear-gradient(135deg, #e63946, #de5959); /* Red Inside */
+    background: linear-gradient(135deg, #529c16, #76df20); /* Green Inside */
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
